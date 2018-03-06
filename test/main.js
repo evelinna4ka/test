@@ -20,6 +20,8 @@ document.getElementById('division').addEventListener('click',
 document.getElementById('multi').addEventListener('click', function() {
   document.getElementById('answer').innerText = +x.value * +y.value;
 });
-document.getElementById('colorpink').addEventListener('click',function(){
-	document.getElementById('answer').style.background="color:pink"
+document.getElementsByName('background')[0].addEventListener('change',function(e){
+console.log(e);
+alert('ddgfghdsgh')	
+document.getElementById('answer').style.background=e.target.value
 });
